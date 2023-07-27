@@ -1,0 +1,129 @@
+@import '../scss/Parts/common.scss';
+
+body{color:#000;font-size:14px;width:100%; 
+    font-family: 'Mulish', sans-serif; 
+}
+.title-ww-create { 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    font-size: 22px;
+}
+.btnTalkToUs { 
+    display: flex;
+    width: 160px;
+    height: 50px;
+    justify-content: space-evenly;
+    background-color: #E24343;
+    align-items: center;
+    font-weight: 700;
+    flex: none;
+    border-radius: 28px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 24px;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.582);
+    }
+
+    100% {
+        box-shadow: 0 0 7px 25px rgba(0, 112, 244, 0);
+    }
+}
+.sec-main {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    top: 16px;
+    .logo  {
+        top: 1px;
+        z-index: 9;
+        background: #000000f7;
+        padding: 6px 12px;
+        border-radius: 4px;  
+    }
+}
+.banner {
+    height: 750px;
+    width: 100%;
+    overflow: hidden;
+}
+.overlay-grid-img {
+    position: absolute;
+    top: 166px;
+    left: 0;
+    z-index: 2;
+}
+.overlay-background {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #00000084;
+}
+.overlay-content-background {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 90%));
+}
+
+.slick-item {
+    img {
+        width: 100%;
+    }
+}
+.content-banner {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 80px;
+    padding: 0 24px;
+    z-index: 9;
+}
+.contentTalkToUs {
+    margin-top: 16px;
+    p {
+        font-size: 14px;
+        color: #fff;
+        line-height: 20px;
+    }
+}
+
+.lower-content {
+    font-family: 'Mulish', sans-serif;
+    h3 {
+        background-color: #e24343a1;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 12px;
+        display: inline-block;
+    }
+    p {
+        font-size: 32px;
+        text-transform: capitalize;
+        color: #fff;
+        display: block;
+        margin: 0;
+    }
+}
+
+   

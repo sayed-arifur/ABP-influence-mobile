@@ -1,0 +1,78 @@
+article,aside,blockquote,body,div,figure,form,h1,h2,h3,h4,h5,h6,header,li,nav,p,section,ul{margin:0;padding:0;box-sizing:border-box}
+li,ul{list-style:none}
+a{color:#000;text-decoration:none}
+a:hover{text-decoration:none;color:#ee303b}
+body{color:#000;font-size:14px;width:100%; 
+    font-family: 'Mulish', sans-serif;}
+.textcred{color:#ed2f3c}
+.notob-regular,body{font-family:"Noto Serif Bengali",serif;font-weight:400}
+.notob-bold{font-family:"Noto Serif Bengali",serif;font-weight:700}
+.grycolor{color:#5b5b5b}
+.fs-14{font-size:14px}
+.fs-16{font-size:16px}
+.fs-18{font-size:18px}
+.fs-20{font-size:20px}
+.pt-32{padding-top:32px}
+.pb-32{padding-bottom:32px}
+.mt-8{margin-top:8px}
+.mt-8{margin-top:8px}
+.mb-8{margin-bottom:8px}
+.mt-32{margin-top:32px}
+.mb-32{margin-bottom:32px}
+.mt-40{margin-top:40px}
+.mt-48{margin-top:48px} 
+.mb-40{margin-bottom:40px}
+.mt-16{margin-top:16px}
+.mb-16{margin-bottom:16px}
+.mt-24{margin-top:24px}
+.mb-24{margin-bottom:24px}
+.sticky-ad{position:sticky;top:43px;left:0;z-index:9;text-align:center;display:flex;flex-direction:column;align-items:center}
+.ad300x600{height:625px;text-align:center}
+.ad970x250{height:275px;text-align:center}
+.header-sticky-ad{position:sticky;top:0;left:0;z-index:9;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.ad970x280{height:305px;text-align:center}
+.ad280{height:305px;text-align:center}
+.ad600{height:625px;text-align:center}
+.ad250{height:275px;text-align:center}
+.ad90{height:115px;text-align:center}
+.stickad{display:flex;justify-content:center;position:sticky;top:0;left:0;flex-direction:column}
+figure{position:relative}
+.dfjcsb{display:flex;justify-content:space-between}
+.tac{text-align:center}
+.df{display:flex}
+.taright{text-align:right}
+.betellips{text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical}
+.betvl-1{-webkit-line-clamp:1}
+.betvl-2{-webkit-line-clamp:2}
+.betvl-3{-webkit-line-clamp:3}
+.betvl-4{-webkit-line-clamp:4}
+.betvl-5{-webkit-line-clamp:5}
+.betvl-6{-webkit-line-clamp:6}
+.betvl-7{-webkit-line-clamp:7}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+// =  Responsive = //
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+    }
+    .scroll-line-horizontal {
+        display: none;
+    }
+    .list-open-menu ul {
+        flex-wrap: wrap;
+        li {
+            width: 100%;
+            font-size: 34px;
+        }
+    }
+    .btnTalkToUs {
+        span:nth-child(2){
+            display: none;
+        }
+    }
+}
+  
