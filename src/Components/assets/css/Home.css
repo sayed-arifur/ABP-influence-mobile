@@ -479,3 +479,23 @@ body {
 .sec-successful-campaign .list-successful ul li:nth-child(3) .video-name {
   background-color: #39B6F8;
 }
+
+.sec-creators {
+  background-color: #E5D165;
+  padding: 50px 0 74px;
+}
+.sec-creators .img-social-group {
+  margin-top: 0px;
+  text-align: center;
+}
+.sec-creators .img-social-group img {
+  margin: 0 auto;
+}
+.sec-creators .content-creators {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+}
+.sec-creators .arti-banner {
+  margin-top: 60px;
+}

@@ -16,6 +16,7 @@ import secureEdge05 from '../Components/assets/images/05-secureEdge.svg';
 import success1 from '../Components/assets/images/success-1.png';
 import success2 from '../Components/assets/images/success-2.png';
 import playCircle from '../Components/assets/images/play_circle.svg';
+import Creators from './Creators/Creators';
 
 
 const Main = () => {
@@ -29,6 +30,7 @@ const Main = () => {
       };
     return (
         <>
+        {/* sec-main */}
         <section className='sec-main'>
             <div className='header'>
                 <div className='logo'>
@@ -70,6 +72,7 @@ const Main = () => {
                 </Slider>
             </div>
         </section>
+        {/* sec-secureEdge */}
         <section className='sec-secureEdge'>
             <div className='container'>
                 <div className='title-secure'>
@@ -112,6 +115,7 @@ const Main = () => {
                 </article>
             </div>
         </section>
+        {/* sec-successful-campaign */}
         <section className='sec-successful-campaign'>
             <div className='container'>
                 <div className='title-secure'>
@@ -156,6 +160,10 @@ const Main = () => {
                 </div>
             </div>
         </section>
+        {/* sec creators */}
+        <div>
+            <Creators />
+        </div>
         </>
     )
 }
