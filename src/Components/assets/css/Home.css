@@ -240,6 +240,7 @@ figure {
 .container {
   width: 1024px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 @media (max-width: 768px) {
@@ -393,4 +394,88 @@ body {
   color: #fff;
   display: block;
   margin: 0;
+}
+
+.sec-secureEdge {
+  background: #5CA3B1;
+  padding: 40px 0;
+}
+
+.title-big-text {
+  color: #fff;
+  font-size: 28px;
+}
+
+.title-small-text {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.arti-secureEdge {
+  margin-top: 40px;
+}
+.arti-secureEdge ul li {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  align-items: center;
+  color: #fff;
+}
+.arti-secureEdge ul li .icon-secureEdge {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid rgba(204, 204, 204, 0.5490196078);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+}
+.arti-secureEdge .text-secureEdge {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.sec-successful-campaign {
+  background-color: #30344E;
+  padding: 40px 0 60px;
+}
+.sec-successful-campaign .list-successful ul li {
+  margin-top: 40px;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful {
+  position: relative;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful .video-image {
+  width: 100%;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful .video-image img {
+  width: 100%;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful .video-name {
+  position: absolute;
+  left: -5px;
+  top: 16px;
+  background-color: #F25A5A;
+  padding: 4px 18px 4px 10px;
+  color: #fff;
+  border-radius: 0px 12px 12px 0px;
+  font-size: 13px;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful .icon-video {
+  position: absolute;
+  right: 8px;
+  bottom: 4px;
+}
+.sec-successful-campaign .list-successful ul li .bx-successful .icon-video img {
+  width: 100%;
+}
+.sec-successful-campaign .list-successful ul li:nth-child(2) .video-name {
+  background-color: #4164F7;
+}
+.sec-successful-campaign .list-successful ul li:nth-child(3) .video-name {
+  background-color: #39B6F8;
 }
