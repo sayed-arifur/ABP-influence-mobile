@@ -17,6 +17,7 @@ import success1 from '../Components/assets/images/success-1.png';
 import success2 from '../Components/assets/images/success-2.png';
 import playCircle from '../Components/assets/images/play_circle.svg';
 import Creators from './Creators/Creators';
+import LeadingPartners from './LeadingPartners/LeadingPartners';
 
 
 const Main = () => {
@@ -160,9 +161,13 @@ const Main = () => {
                 </div>
             </div>
         </section>
-        {/* sec creators */}
-        <div>
+        {/* sec components-creators */}
+        <div className='components-creators'>
             <Creators />
+        </div>
+        {/* sec components-Leading Partners */}
+        <div className='components-Partners'>
+            <LeadingPartners />
         </div>
         </>
     )

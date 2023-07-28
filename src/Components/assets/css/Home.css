@@ -261,6 +261,85 @@ figure {
     display: none;
   }
 }
+.sec-leadingPartners {
+  background-color: #EFEFEF;
+  padding: 50px 0;
+}
+.sec-leadingPartners .SLR-vertical-Small {
+  height: 154px;
+  background-color: rgba(0, 0, 0, 0.41);
+  left: 120px;
+  top: 0;
+}
+.sec-leadingPartners .SLR-vertical-Small .pulse {
+  top: 154px;
+  background: #000;
+  animation: shadow-pulse-leading 1.5s infinite;
+}
+@keyframes shadow-pulse-leading {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.582);
+  }
+  100% {
+    box-shadow: 0 0 7px 25px rgba(0, 112, 244, 0);
+  }
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-prev, .sec-leadingPartners .LeadingPartners-slider .slick-next {
+  top: unset;
+  bottom: -34%;
+  width: 38px;
+  height: 38px;
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-prev::before, .sec-leadingPartners .LeadingPartners-slider .slick-next::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-position: center;
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-prev {
+  left: 0px;
+  right: unset;
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-next {
+  right: 0px;
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-prev:before {
+  background: url("../images/arrow_back_black.png") no-repeat;
+  background-position: center;
+}
+.sec-leadingPartners .LeadingPartners-slider .slick-next:before {
+  background: url("../images/arrow_forward_black.png") no-repeat;
+  background-position: center;
+}
+.sec-leadingPartners .title-big-text {
+  color: #000000;
+  font-size: 28px;
+}
+.sec-leadingPartners .item-partners {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.sec-leadingPartners .item-partners .logo-item-partners {
+  background-color: #fff;
+  width: 140px;
+  height: 80px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-leadingPartners .item-partners .logo-item-partners:first-child {
+  margin-bottom: 30px;
+}
+
 body {
   color: #000;
   font-size: 14px;
