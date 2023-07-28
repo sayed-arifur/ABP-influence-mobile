@@ -8,7 +8,7 @@ import '../assets/css/Home.css';
 
 const Creators = () => {
     const creatorBannerSlick = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -40,6 +40,7 @@ const Creators = () => {
                     </div>
                 </Slider>
             </article>
+            <div class="btnTalkToUs"><span>Talk to us</span></div>
         </div>
     </section>
   )
