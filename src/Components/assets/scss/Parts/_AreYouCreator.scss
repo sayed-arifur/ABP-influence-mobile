@@ -1,0 +1,69 @@
+.sec-areYouCreator {
+    // background-color: #F2F2F2;
+    background: url("../images/bg-creator.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    text-align: center;
+    .title-creator {
+        h4{
+            color: #B5B5B5;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 56px;
+        }
+        h3{
+            color: #FFFFFF;
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 56px;
+        }
+    }
+    .form-creator {
+        border-top: 1px solid #8e8e8e;
+        padding-top: 46px;
+        width: 860px;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        width: 760px;
+        margin: 0 auto;
+        .form-field {
+            width: 360px;
+            display: flex;
+            flex-wrap: wrap;
+            label {
+                display: block;
+                text-align: center;
+                width: 100%;   
+                font-size: 18px;
+                font-weight: 500;             
+            }
+            input {
+                width: 100%;      
+                height: 60px;   
+                margin-top: 16px; 
+                background: #FFFFFF;
+                box-shadow: 0px 3px 6px #00000029;
+                border: 1px solid #56669D;
+                border-radius: 6px;      
+            }
+        }
+    }
+    .form-row-btn {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        .btnTalkToUs {
+            color: #fff;
+            justify-content: center;
+            gap: 16px;
+        }
+    }
+    .btnTalkToUs {
+        margin: 100px auto 0;
+    }
+}

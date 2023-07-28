@@ -18,6 +18,9 @@ import success2 from '../Components/assets/images/success-2.png';
 import playCircle from '../Components/assets/images/play_circle.svg';
 import Creators from './Creators/Creators';
 import LeadingPartners from './LeadingPartners/LeadingPartners';
+import PlanAcampaign from './PlanAcampaign/PlanAcampaign';
+import AreYouCreator from './AreYouCreator/AreYouCreator';
+import Footer from './HeaderFooter/Footer';
 
 
 const Main = () => {
@@ -168,6 +171,18 @@ const Main = () => {
         {/* sec components-Leading Partners */}
         <div className='components-Partners'>
             <LeadingPartners />
+        </div>
+        {/* sec components-Plan a Campaign */}
+        <div className='components-Partners'>
+            <PlanAcampaign />
+        </div>
+        {/* sec components- are you creator */}
+        <div className='components-areUcreator'>
+            <AreYouCreator />
+        </div>
+        {/* Footr */}
+        <div className='component-footer'>
+            <Footer />
         </div>
         </>
     )

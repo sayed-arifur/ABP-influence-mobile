@@ -1,0 +1,156 @@
+.sec-planAcampaign {
+    background-color: #000;
+    .bx-planCampaign {
+        display: flex;
+        justify-content: end;
+        padding-top: 24px;
+        position: relative;
+        .inner-planCampaign {
+            width: 100%;
+            padding: 16px;
+            padding-bottom: 60px;
+        }
+    }
+    .title-ww-create {
+        margin-top: 48px;
+        color: #fff;
+    }
+    .list-planCampaign {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 8px;
+            li {
+                text-align: center;
+                .item-list-plan {
+                    padding: 12px 5px 0;
+                    width: 76px;
+                    height: 110px;
+                    background-color: #2C2C2C;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    .text-list-plan {
+                        padding-top: 12px;
+                        color: #fff;
+                    }
+                }
+                &.active {
+                    .item-list-plan {
+                        background-color: #646464;
+                        border: 1px solid #DDDDDD;
+                    }
+                }
+            }
+        }
+    }
+    .total-budget {
+        margin-top: 40px;
+        text-align: center;
+        p {
+            color: #BBBBBB;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 30px;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+    }
+    .min-max-slider {
+        color: #fff;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .content-piece-cost {
+        margin-top: 40px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+            li{
+                width: 100%;
+                .item-content-piece-cost {
+                    background-color: #fff;
+                    padding: 24px;
+                    text-align: center;
+                    width: 100%;
+                    border-radius: 4px;
+                    p {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        font-size: 40px;
+                        font-weight: bold;
+                        margin-top: 8px;
+                    }
+                }   
+            }
+        }
+    }
+    .btnTalkToUs {
+        margin-top: 40px;
+        color: #fff;
+        margin: 40px auto 0;
+    }
+    .pulse {
+        background: #fff;
+    }
+    .SLR-vertical-Small {
+        right: 30%;
+        background-color: rgb(255 255 255 / 41%);
+        .pulse {
+            top: 75%;
+        }      
+        @keyframes shadow-pulse {
+            0% {
+                box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.582);
+            }
+            100% {
+                box-shadow: 0 0 7px 25px rgba(255, 255, 255, 0);
+            }
+        }
+    }   
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid #111;
+        background: #656565;
+        cursor: pointer;
+        z-index: 999;
+    }  
+    .slider {
+        width: 100%;      
+        &__ranges {
+            display: flex;
+            position: relative;          
+            p {
+                font-size: 14px;
+                color: #DDDDDD;
+            }          
+            p:last-of-type {
+                position: absolute;
+                right: 0;
+            }
+        }      
+        &__input {
+            position: relative;          
+            &_slider {
+                background-color: #f00;
+                border-radius: 0px;
+                width: 100%;
+                margin: 10px 0;
+                position: relative;
+            }          
+            &_tracker {
+                position: absolute;
+                height: 34px;
+                border-radius: 5px;
+                top: 15px;
+                // background-color: #0A6ED1;
+            }
+        }
+    }
+}

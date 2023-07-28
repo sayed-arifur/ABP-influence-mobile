@@ -1,5 +1,7 @@
 @import '../scss/Parts/common.scss';
 @import '../scss/Parts/LeadingPartners.scss';
+@import '../scss/Parts/PlanAcampaign.scss';
+@import '../scss/Parts/AreYouCreator.scss';
 
 body{color:#000;font-size:14px;width:100%; 
     font-family: 'Mulish', sans-serif; 
@@ -237,4 +239,11 @@ body{color:#000;font-size:14px;width:100%;
         margin: 60px auto 0;
     }
 }
-   
+footer {
+    text-align: center;
+    padding: 16px 0;
+    .content-footer {
+        padding: 16px 0;
+        // border-top: 1px solid #ccc;
+    }
+} 
