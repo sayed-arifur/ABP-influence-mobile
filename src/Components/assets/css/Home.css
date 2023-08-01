@@ -906,6 +906,14 @@ figure {
   display: block;
 }
 
+#ul_secureEdg {
+  display: none;
+}
+
+#ul_secureEdg.show {
+  display: block;
+}
+
 body {
   color: #000;
   font-size: 14px;
