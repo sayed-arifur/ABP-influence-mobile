@@ -148,7 +148,7 @@ const Main = () => {
                     }, 100)
                 }               
 
-                <div className='title-Campaigns animate fadeInUp two' id='title_Campaigns'>
+                <div className='title-Campaigns animate fadeInUp one' id='title_Campaigns'>
                     <div className='title-big-text'>Successful Campaigns</div>
                 </div>
                 </div>
@@ -160,7 +160,7 @@ const Main = () => {
                 }      
                 <div className='list-successful' id='list_successful'>
                     <ul>
-                        <li className=' animate fadeInUp one'>
+                        <li className=' animate fadeInUp two'>
                             <div className='bx-successful'>
                                 <div className='video-image'>
                                     <img src={success1} alt='' />
@@ -171,7 +171,7 @@ const Main = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className=' animate fadeInUp two'>
+                        <li className=' animate fadeInUp three'>
                             <div className='bx-successful'>
                                 <div className='video-image'>
                                     <img src={success2} alt='' />
@@ -182,7 +182,7 @@ const Main = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className=' animate fadeInUp three'>
+                        <li className=' animate fadeInUp four'>
                             <div className='bx-successful'>
                                 <div className='video-image'>
                                     <img src={success1} alt='' />
