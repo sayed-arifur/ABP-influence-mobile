@@ -3,22 +3,22 @@ import { useInView } from 'react-intersection-observer';
 
 const Inviewport = () => {
 
-    const { ref, inView, entry } = useInView({
-        threshold: 0,
-    });
+    // const { ref, inView, entry } = useInView({
+    //     threshold: 0,
+    // });
 
     return (
         <>
         <section>
-            <div ref={ref}>
+            {/* <div ref={ref}> */}
             <div id='id_viewport' className='box animate fadeInUp one'>Lorem ipsum dummy text</div>
                 {/* <h2>{`Header inside viewport ${inView}.`}</h2> */}
                 {
-                    setTimeout(()=>{
-                        inView == true ? document.getElementById("id_viewport").classList.add('show') : document.getElementById("id_viewport").classList.remove('show')
-                    }, 100)
+                    // setTimeout(()=>{
+                    //     inView == true ? document.getElementById("id_viewport").classList.add('show') : document.getElementById("id_viewport").classList.remove('show')
+                    // }, 100)
                 }
-            </div>
+            {/* </div> */}
         </section>
 
 {/* 

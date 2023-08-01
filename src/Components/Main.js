@@ -27,9 +27,9 @@ import Inviewport from './Animations/Inviewport';
 
 const Main = () => {    
 
-    // const { ref, inView, entry } = useInView({
-    //     threshold: 0,
-    // });
+    const { ref, inView, entry } = useInView({
+        threshold: 0,
+    });
 
     const bannerSlick = {
         dots: false,
@@ -84,12 +84,12 @@ const Main = () => {
         {/* sec-secureEdge */}
         <section className='sec-secureEdge'>
             <div className='container'>
-                {/* <div ref={ref}> */}
+                <div ref={ref}>
                 {/* <h2>{`sec-secureEdge ${inView}.`}</h2> */}
                 {
-                    // setTimeout(()=>{
-                    //     inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : null
-                    // }, 100)
+                    setTimeout(()=>{
+                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : document.getElementById("sec_secureEdge").classList.add('show')
+                    }, 100)
                 }
                     <div className='title-secure' id='sec_secureEdge'>
                         <div className='title-big-text animate fadeInLeft one'>How We Secure an Edge</div>
@@ -129,7 +129,7 @@ const Main = () => {
                             </li>
                         </ul>
                     </article>
-                {/* </div> */}
+                </div>
             </div>
         </section>
         {/* sec-successful-campaign */}

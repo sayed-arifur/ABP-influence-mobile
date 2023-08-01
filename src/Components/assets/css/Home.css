@@ -894,10 +894,6 @@ figure {
     transform: none;
   }
 }
-#id_viewport {
-  display: none;
-}
-
 #id_viewport.show {
   display: block;
 }
