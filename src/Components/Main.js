@@ -88,7 +88,7 @@ const Main = () => {
                 {/* <h2>{`sec-secureEdge ${inView}.`}</h2> */}
                 {
                     setTimeout(()=>{
-                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : document.getElementById("sec_secureEdge").classList.remove('show')
+                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : null
                     }, 100)
                 }
                     <div className='title-secure' id='sec_secureEdge'>
