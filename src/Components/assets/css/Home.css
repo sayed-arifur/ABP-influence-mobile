@@ -956,6 +956,14 @@ figure {
   display: block;
 }
 
+#list_successful {
+  display: none;
+}
+
+#list_successful.show {
+  display: block;
+}
+
 body {
   color: #000;
   font-size: 14px;
