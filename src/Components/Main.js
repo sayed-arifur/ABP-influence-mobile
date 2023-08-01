@@ -82,54 +82,53 @@ const Main = () => {
             </div>
         </section>
         {/* sec-secureEdge */}
-        <section className='sec-secureEdge'>
-            <div className='container'>
-                <div ref={ref}>
-                {/* <h2>{`sec-secureEdge ${inView}.`}</h2> */}
+        <section className='sec-secureEdge'>            
+            <div className='container'> 
+                <div ref={ref} style={{fontSize: 0}}>               
                 {
                     setTimeout(()=>{
-                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : document.getElementById("sec_secureEdge").classList.add('show')
+                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : <></>
                     }, 100)
-                }
-                    <div className='title-secure' id='sec_secureEdge'>
-                        <div className='title-big-text animate fadeInLeft one'>How We Secure an Edge</div>
-                        <div className='title-small-text animate fadeInLeft two'>From content creation, distribution, tracking, to analysis, we ensure that each campaign delivers.</div>
-                    </div>
-                    <article className='arti-secureEdge'>
-                        <ul>
-                            <li>
-                                <div className='icon-secureEdge'>
-                                    <img src={secureEdge01} alt='' />
-                                </div>
-                                <div className='text-secureEdge'>Total 360-degree Campaigns</div>
-                            </li>
-                            <li>
-                                <div className='icon-secureEdge'>
-                                    <img src={secureEdge02} alt='' />
-                                </div>
-                                <div className='text-secureEdge'>Online to Offline Solutions</div>
-                            </li>
-                            <li>
-                                <div className='icon-secureEdge'>
-                                    <img src={secureEdge03} alt='' />
-                                </div>
-                                <div className='text-secureEdge'>Seamless Collaboration and Support</div>
-                            </li>
-                            <li>
-                                <div className='icon-secureEdge'>
-                                    <img src={secureEdge04} alt='' />
-                                </div>
-                                <div className='text-secureEdge'>Performance Tracking</div>
-                            </li>
-                            <li>
-                                <div className='icon-secureEdge'>
-                                    <img src={secureEdge05} alt='' />
-                                </div>
-                                <div className='text-secureEdge'>Customized Partnerships</div>
-                            </li>
-                        </ul>
-                    </article>
+                }                
                 </div>
+                <div className='title-secure' id='sec_secureEdge'>
+                    <div className='title-big-text animate fadeInLeft one'>How We Secure an Edge</div>
+                    <div className='title-small-text animate fadeInLeft two'>From content creation, distribution, tracking, to analysis, we ensure that each campaign delivers.</div>
+                </div>
+                <article className='arti-secureEdge'>
+                    <ul>
+                        <li>
+                            <div className='icon-secureEdge'>
+                                <img src={secureEdge01} alt='' />
+                            </div>
+                            <div className='text-secureEdge'>Total 360-degree Campaigns</div>
+                        </li>
+                        <li>
+                            <div className='icon-secureEdge'>
+                                <img src={secureEdge02} alt='' />
+                            </div>
+                            <div className='text-secureEdge'>Online to Offline Solutions</div>
+                        </li>
+                        <li>
+                            <div className='icon-secureEdge'>
+                                <img src={secureEdge03} alt='' />
+                            </div>
+                            <div className='text-secureEdge'>Seamless Collaboration and Support</div>
+                        </li>
+                        <li>
+                            <div className='icon-secureEdge'>
+                                <img src={secureEdge04} alt='' />
+                            </div>
+                            <div className='text-secureEdge'>Performance Tracking</div>
+                        </li>
+                        <li>
+                            <div className='icon-secureEdge'>
+                                <img src={secureEdge05} alt='' />
+                            </div>
+                            <div className='text-secureEdge'>Customized Partnerships</div>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </section>
         {/* sec-successful-campaign */}
