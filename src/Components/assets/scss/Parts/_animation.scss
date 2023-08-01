@@ -364,3 +364,31 @@
 #ul_secureEdg.show {
   display: block;
 }
+// === from spikestream site
+.fade-up {
+  // opacity: 0;
+  -webkit-transform: translateY(80px);
+  transform: translateY(80px);
+  animation: my-animation 4s linear forwards;
+}
+
+@keyframes my-animation {
+  0% {
+      transform: translate(0, 40%) scale(0);
+  }
+  10% {
+      transform: translate(0, 40%) scale(1.1);
+  }
+  20% {
+      transform: translate(0, 40%) scale(1);
+ }
+ 100% {
+      transform: translateY(0%);
+ }
+}
+#title_Campaigns {
+  display: none;
+}
+#title_Campaigns.show {
+  display: block;
+}

@@ -24,7 +24,6 @@ import AreYouCreator from './AreYouCreator/AreYouCreator';
 import Footer from './HeaderFooter/Footer';
 import Inviewport from './Animations/Inviewport';
 
-
 const Main = () => {    
 
     const { ref, inView, entry } = useInView({
@@ -43,7 +42,7 @@ const Main = () => {
     return (
         <>
         {/* sec-main */}
-        <section className='sec-main'>
+        <section className='sec-main min-h-screen'>
             <div className='header'>
                 <div className='logo animate fadeInDown one'>
                     <a href='#'>
@@ -82,7 +81,7 @@ const Main = () => {
             </div>
         </section>
         {/* sec-secureEdge */}
-        <section className='sec-secureEdge'>            
+        <section className='sec-secureEdge min-h-screen'>            
             <div className='container'> 
                 <div ref={ref} style={{fontSize: 0}}>               
                 {
@@ -128,7 +127,7 @@ const Main = () => {
                             </div>
                             <div className='text-secureEdge'>Performance Tracking</div>
                         </li>
-                        <li className=' animate fadeInLeft seven'>
+                        <li className='animate fadeInLeft seven'>
                             <div className='icon-secureEdge'>
                                 <img src={secureEdge05} alt='' />
                             </div>
@@ -139,9 +138,17 @@ const Main = () => {
             </div>
         </section>
         {/* sec-successful-campaign */}
-        <section className='sec-successful-campaign'>
+        <section className='sec-successful-campaign min-h-screen' id='sec_successful_campaign'>
             <div className='container'>
-                <div className='title-secure'>
+                
+            <div ref={ref} style={{fontSize: 0}}>               
+                {
+                    setTimeout(()=>{
+                        inView == true ? document.getElementById("title_Campaigns").classList.add('show') : <></>
+                    }, 100)
+                }               
+
+                <div className='title-Campaigns animate fadeInLeft two' id='title_Campaigns'>
                     <div className='title-big-text'>Successful Campaigns</div>
                 </div>
                 <div className='list-successful'>
@@ -182,18 +189,19 @@ const Main = () => {
                     </ul>
                 </div>
             </div>
+            </div>
         </section>
         {/* sec components-creators */}
-        <div className='components-creators'>
+        <div className='components-creators min-h-screen'>
             <Creators />
         </div>
-        <Inviewport />
+        {/* <Inviewport /> */}
         {/* sec components-Leading Partners */}
-        <div className='components-Partners'>
+        <div className='components-Partners '>
             <LeadingPartners />
         </div>
         {/* sec components-Plan a Campaign */}
-        <div className='components-Partners'>
+        <div className='components-Partners min-h-screen'>
             <PlanAcampaign />
         </div>
         {/* sec components- are you creator */}
