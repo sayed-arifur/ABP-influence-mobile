@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useInView } from 'react-intersection-observer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './assets/css/Home.css';
@@ -21,9 +22,15 @@ import LeadingPartners from './LeadingPartners/LeadingPartners';
 import PlanAcampaign from './PlanAcampaign/PlanAcampaign';
 import AreYouCreator from './AreYouCreator/AreYouCreator';
 import Footer from './HeaderFooter/Footer';
+import Inviewport from './Animations/Inviewport';
 
 
-const Main = () => {
+const Main = () => {    
+
+    const { ref, inView, entry } = useInView({
+        threshold: 0,
+    });
+
     const bannerSlick = {
         dots: false,
         infinite: true,
@@ -32,36 +39,34 @@ const Main = () => {
         slidesToScroll: 1,
         autoplay: true,
       };
+      
     return (
         <>
         {/* sec-main */}
         <section className='sec-main'>
             <div className='header'>
-                <div className='logo'>
+                <div className='logo animate fadeInDown one'>
                     <a href='#'>
                         <img src={abpInfluenceLogo} alt='' />
                     </a>
                 </div>
-            </div>
-            
+            </div>            
             <div className='content-banner'>
-                <div className='lower-content'>
+                <div className='lower-content animate fadeInUp two'>
                     <p>Discover Influencers in Every Nook</p>
                 </div>
-                <div className='contentTalkToUs'>
+                <div className='contentTalkToUs animate fadeInUp three'>
                     <p>We understand that every brand is unique, with distinct goals and target markets.With our media legacy, we help grow businesses by aligning them with the right social content creators from our diverse portfolio.</p>
                 </div>
-                <div className='btnTalkToUs'>
+                <div className='btnTalkToUs animate fadeInUp four'>
                     <span>Talk to us</span>
                 </div>
             </div>
-
             <div className='overlay-grid-img'>
                 <img src={bannerGrid} alt='' />
             </div>
             <div className='overlay-background'></div>
             <div className='overlay-content-background'></div>
-
             <div className='banner'>
                 <Slider {...bannerSlick}>
                     <div className='slick-item'>
@@ -79,44 +84,52 @@ const Main = () => {
         {/* sec-secureEdge */}
         <section className='sec-secureEdge'>
             <div className='container'>
-                <div className='title-secure'>
-                    <div className='title-big-text'>How We Secure an Edge</div>
-                    <div className='title-small-text'>From content creation, distribution, tracking, to analysis, we ensure that each campaign delivers.</div>
+                <div ref={ref}>
+                {/* <h2>{`sec-secureEdge ${inView}.`}</h2> */}
+                {
+                    setTimeout(()=>{
+                        inView == true ? document.getElementById("sec_secureEdge").classList.add('show') : document.getElementById("sec_secureEdge").classList.remove('show')
+                    }, 100)
+                }
+                    <div className='title-secure' id='sec_secureEdge'>
+                        <div className='title-big-text animate fadeInLeft one'>How We Secure an Edge</div>
+                        <div className='title-small-text animate fadeInLeft two'>From content creation, distribution, tracking, to analysis, we ensure that each campaign delivers.</div>
+                    </div>
+                    <article className='arti-secureEdge'>
+                        <ul>
+                            <li>
+                                <div className='icon-secureEdge'>
+                                    <img src={secureEdge01} alt='' />
+                                </div>
+                                <div className='text-secureEdge'>Total 360-degree Campaigns</div>
+                            </li>
+                            <li>
+                                <div className='icon-secureEdge'>
+                                    <img src={secureEdge02} alt='' />
+                                </div>
+                                <div className='text-secureEdge'>Online to Offline Solutions</div>
+                            </li>
+                            <li>
+                                <div className='icon-secureEdge'>
+                                    <img src={secureEdge03} alt='' />
+                                </div>
+                                <div className='text-secureEdge'>Seamless Collaboration and Support</div>
+                            </li>
+                            <li>
+                                <div className='icon-secureEdge'>
+                                    <img src={secureEdge04} alt='' />
+                                </div>
+                                <div className='text-secureEdge'>Performance Tracking</div>
+                            </li>
+                            <li>
+                                <div className='icon-secureEdge'>
+                                    <img src={secureEdge05} alt='' />
+                                </div>
+                                <div className='text-secureEdge'>Customized Partnerships</div>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
-                <article className='arti-secureEdge'>
-                    <ul>
-                        <li>
-                            <div className='icon-secureEdge'>
-                                <img src={secureEdge01} alt='' />
-                            </div>
-                            <div className='text-secureEdge'>Total 360-degree Campaigns</div>
-                        </li>
-                        <li>
-                            <div className='icon-secureEdge'>
-                                <img src={secureEdge02} alt='' />
-                            </div>
-                            <div className='text-secureEdge'>Online to Offline Solutions</div>
-                        </li>
-                        <li>
-                            <div className='icon-secureEdge'>
-                                <img src={secureEdge03} alt='' />
-                            </div>
-                            <div className='text-secureEdge'>Seamless Collaboration and Support</div>
-                        </li>
-                        <li>
-                            <div className='icon-secureEdge'>
-                                <img src={secureEdge04} alt='' />
-                            </div>
-                            <div className='text-secureEdge'>Performance Tracking</div>
-                        </li>
-                        <li>
-                            <div className='icon-secureEdge'>
-                                <img src={secureEdge05} alt='' />
-                            </div>
-                            <div className='text-secureEdge'>Customized Partnerships</div>
-                        </li>
-                    </ul>
-                </article>
             </div>
         </section>
         {/* sec-successful-campaign */}
@@ -168,6 +181,7 @@ const Main = () => {
         <div className='components-creators'>
             <Creators />
         </div>
+        <Inviewport />
         {/* sec components-Leading Partners */}
         <div className='components-Partners'>
             <LeadingPartners />

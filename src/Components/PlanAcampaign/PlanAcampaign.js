@@ -16,7 +16,7 @@ const PlanAcampaign = () => {
         <div className='container'>
             <div className='bx-planCampaign'>
                 <div className='SLR-vertical-Small'>
-                    <div class="pulse"></div>
+                    <div className="pulse"></div>
                 </div>
                 <div className='inner-planCampaign'>
                     <div className='title-ww-create'>
@@ -71,11 +71,11 @@ const PlanAcampaign = () => {
                         <h3>₹{value}</h3>
                     </div>
                     <div className='min-max-slider'>
-                        <div class="slider">
+                        <div className="slider">
                             
-                            <div class="slider__input">
+                            <div className="slider__input">
                                 <input
-                                    class="slider__input_slider"
+                                    className="slider__input_slider"
                                     type="range"
                                     min="50000"
                                     max="1000000"
@@ -84,7 +84,7 @@ const PlanAcampaign = () => {
                                     onChange={e => setValue(e.target.value)}
                                     />
                             </div>
-                            <div class="slider__ranges">
+                            <div className="slider__ranges">
                                 <p>Min: ₹50,000</p>
                                 <p>Max: ₹1,000,000</p>
                             </div>

@@ -40,7 +40,7 @@ const Creators = () => {
                     </div>
                 </Slider>
             </article>
-            <div class="btnTalkToUs"><span>Talk to us</span></div>
+            <div className="btnTalkToUs"><span>Talk to us</span></div>
         </div>
     </section>
   )
