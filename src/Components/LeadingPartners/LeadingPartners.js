@@ -21,6 +21,7 @@ const LeadingPartners = () => {
     }
 
   return (
+    <div className='components-Partners '>
     <section className='sec-leadingPartners'>
         <div className='container'>
             <div className='bx-leadingPartners'>
@@ -66,6 +67,7 @@ const LeadingPartners = () => {
             </div>
         </div>
     </section>
+    </div>
   )
 }
 

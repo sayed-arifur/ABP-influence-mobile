@@ -12,6 +12,7 @@ const PlanAcampaign = () => {
     const [value, setValue] = React.useState("150000");
 
   return ( 
+    <div className='components-Partners min-h-screen'>
     <section className='sec-planAcampaign'>
         <div className='container'>
             <div className='bx-planCampaign'>
@@ -119,6 +120,7 @@ const PlanAcampaign = () => {
             </div>
         </div>
     </section>
+    </div>
   )
 }
 

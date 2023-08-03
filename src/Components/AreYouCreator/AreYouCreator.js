@@ -8,6 +8,7 @@ const AreYouCreator = () => {
     const [social, setSocial] = useState();
 
   return (
+    <div className='components-areUcreator'>
     <section className='sec-areYouCreator'>
         <div className='container'>
             <div className='title-creator'>
@@ -19,6 +20,7 @@ const AreYouCreator = () => {
             </div>
         </div>
     </section>
+    </div>
   )
 }
 

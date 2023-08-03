@@ -16,33 +16,35 @@ const Creators = () => {
         autoplay: true,
       };
   return (    
-    <section className='sec-creators'>
-        <div className='container'>
-            <div className='title-secure'>
-                <div className='title-big-text'>Creators</div>
+    <div className='components-creators min-h-screen'>
+        <section className='sec-creators'>
+            <div className='container'>
+                <div className='title-secure'>
+                    <div className='title-big-text'>Creators</div>
+                </div>
+                <div className='img-social-group'>
+                    <img src={socialImgGroup} alt=' ' />
+                </div>
+                <div className='content-creators'>
+                    From food to fashion, from lifestyle to health, our social content creators help brands establish authentic connections with their target audience.
+                </div>
+                <article className='arti-banner'>
+                    <Slider {...creatorBannerSlick}>
+                        <div className='slick-item'>
+                            <img src={imgCreator} alt='' />
+                        </div>
+                        <div className='slick-item'>
+                            <img src={imgCreator} alt='' />
+                        </div>
+                        <div className='slick-item'>
+                            <img src={imgCreator} alt='' />
+                        </div>
+                    </Slider>
+                </article>
+                <div className="btnTalkToUs"><span>Talk to us</span></div>
             </div>
-            <div className='img-social-group'>
-                <img src={socialImgGroup} alt=' ' />
-            </div>
-            <div className='content-creators'>
-                From food to fashion, from lifestyle to health, our social content creators help brands establish authentic connections with their target audience.
-            </div>
-            <article className='arti-banner'>
-                <Slider {...creatorBannerSlick}>
-                    <div className='slick-item'>
-                        <img src={imgCreator} alt='' />
-                    </div>
-                    <div className='slick-item'>
-                        <img src={imgCreator} alt='' />
-                    </div>
-                    <div className='slick-item'>
-                        <img src={imgCreator} alt='' />
-                    </div>
-                </Slider>
-            </article>
-            <div className="btnTalkToUs"><span>Talk to us</span></div>
-        </div>
-    </section>
+        </section>
+    </div>
   )
 }
 
